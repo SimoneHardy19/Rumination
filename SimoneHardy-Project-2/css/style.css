@@ -1,0 +1,501 @@
+/* GENERAL CSS */
+body{
+  background-color: #73a05c;
+}
+
+#navbar{
+  background-color: #648b50;
+  height: fit-content;
+  padding: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#navbar2{
+  background-color: #648b50;
+  height: 90px;
+  padding: 15px;
+  padding-bottom: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+.nav-holder2{
+  font-family: "Kanit", sans-serif;
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+li{
+  display: inline;
+  padding-right: 40px;
+  margin-left: 60px;
+  padding-top: -10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 21px;
+  margin-left: 40px;
+  position: relative;
+  margin-top: -20px;
+}
+
+#logo{
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+#AppName2{
+  font-family: "Kanit", sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  color: white;
+  margin-left: -1075px;
+  margin-top: -55px;
+  padding-bottom: 5px;
+}
+
+#AppName{
+  font-family: "Kanit", sans-serif;
+  font-style: bold;
+  font-size: 40px;
+  color: white;
+  margin-left: -1075px;
+  margin-top: -65px;
+  padding-bottom: 5px;
+}
+
+ul{
+  margin-left: 1070px;
+  margin-top: -50px;
+  position: relative;
+  
+}
+
+#slogan{
+  font-family: "Kanit", sans-serif;
+  font-size: 50px;
+  color: white;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+
+.box1{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 40px;
+  position: relative;
+  margin-left: 120px;
+  font-weight: bold;
+}
+
+.box2{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 40px;
+  position: relative;
+  margin-left: 120px;
+
+}
+h2{
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  margin-top: 40px;
+  padding-bottom: 30px;
+}
+
+.box3{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 40px;
+  position: relative;
+  margin-left: 120px;
+}
+
+#ad{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.box4{
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 50px;
+  position: relative;
+  margin-left: 120px;
+}
+
+#tryIt{
+  border-radius: 25px;
+  background-color: #648b50;
+  font-family: "Kanit", sans-serif;
+  height: fit-content;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  padding: 7px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 120px;
+  margin-top: 30px;
+  border: 1px solid #ddd;
+}
+
+#tryIt:hover {
+    background-color: #3f5940;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VIDEO */
+.video {
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+.video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* APP */
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "a a a a s s"
+    "a a a a s s"
+    "d d d d s s"
+    "d d d d s s";
+
+  transition: opacity 500ms ease-in-out;
+}
+.inactive {
+  opacity: 0;
+}
+
+/* AUDIO */
+.audio {
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.audio img {
+  width: 50px;
+  cursor: pointer;
+}
+.audio .progress {
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+
+  margin: 0 40px;
+}
+.audio .progress svg {
+  width: 200px;
+  height: 200px;
+
+  transform: rotate(45deg);
+
+  position: absolute;
+  z-index: -1;
+}
+.audio .progress .audio-remaining-time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* DURATIONS */
+.durations {
+  grid-area: d;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0 25%;
+}
+.durations .duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.durations .duration img {
+  width: 75px;
+  cursor: pointer;
+
+  filter: drop-shadow(0px 0px 15px #222);
+}
+.durations .duration p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  color: #fff;
+
+  margin-top: 5px;
+
+  text-shadow: 0px 0px 15px #222;
+}
+/* SEASONS */
+.seasons {
+  grid-area: s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40% 0;
+}
+.seasons .season img {
+  width: 75px;
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 15px #222);
+}
+
+/* TOGGLE MENU */
+.toggle-menu {
+  display: none;
+}
+
+/* FOR SMALL SCREENS */
+@media screen and (max-width: 600px) {
+  /* VIDEO */
+  .video video {
+    height: 100%;
+  }
+
+  /* APP */
+  .app {
+    grid-template-areas:
+      "a"
+      "a"
+      "a"
+      "d";
+  }
+
+  /* AUDIO */
+  .audio .progress {
+    width: 175px;
+    height: 175px;
+
+    margin: 0 10px;
+  }
+  .audio .play img,
+  .pause img {
+    width: 40px;
+  }
+  .audio .progress svg {
+    width: 175px;
+    height: 175px;
+  }
+  .audio .progress .rect1,
+  .rect {
+    width: 125px;
+    height: 125px;
+  }
+  .audio .progress .audio-remaining-time {
+    font-size: 1.75rem;
+  }
+
+  /* DURATIONS */
+  .durations {
+    padding: 0 10%;
+  }
+  .durations .duration img {
+    width: 60px;
+  }
+  .durations .duration p {
+    font-size: 1rem;
+  }
+
+  /* SEASONS */
+  .seasons {
+    position: absolute;
+    top: 20px;
+    left: -250px;
+    padding: 5px;
+
+    flex-direction: row;
+
+    background-color: #fff;
+
+    border-radius: 0 5px 5px 0;
+
+    transition: left 500ms ease-in-out;
+  }
+  .open {
+    left: 0px;
+  }
+  .seasons .season {
+    margin-left: 10px;
+  }
+  .seasons .season img {
+    width: 50px;
+    filter: none;
+  }
+
+  /* TOGGLE MENU */
+  .toggle-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px;
+
+    margin-left: 10px;
+
+    border-radius: 50%;
+
+    transition: all 500ms ease-in-out;
+  }
+  .rotate {
+    transform: rotate(180deg);
+  }
+  .toggle-menu:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .toggle-menu img {
+    width: 20px;
+  }
+}
+
+.box5 {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #648b50;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.faq {
+  margin-top: 20px;
+}
+
+.question {
+  background-color: #73a05c;
+  border: 1px solid #ddd;
+  font-family: "Kanit", sans-serif;
+  font-weight: 200;
+  font-size: 53px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  color: white;
+  
+}
+
+.question:hover {
+  background-color: #638a4f;
+}
+
+.question h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.answer {
+  font-family: "Kanit", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  display: none;
+  padding: 10px 20px;
+  border-top: 1px solid  #88b970;;
+  background-color: #73a05c;
+  color: white;
+}
+
+/* Inspirational quote generator*/
+.box6 {
+  text-align: center;
+  background-color: #648b50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+}
+
+#quote-box {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+  min-height: 50px;
+  font-family: "Kanit", sans-serif;
+}
+
+button {
+  background-color: #73a05c;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  border: none;
+  padding: 7px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border: 1px solid #ddd;
+}
+
+button:hover {
+  background-color: #3f5940;
+}

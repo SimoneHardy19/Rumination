@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div id="navbar">
+
+        <div id="logo">
+            <img src="C:\Users\hardy\Desktop\SimoneHardy-Project-2\assets\img\1x\Asset 1.png" width="60px">
+            <h1 id="AppName">Rumination</h1>
+        </div>
+
+    <div class="nav-holder">
+        <ul>
+
+            <a href="#">
+                <li>Homepage</li>
+            </a>
+            <a href="C:\Users\hardy\Desktop\SimoneHardy-Project-2\meditate.html">
+                <li>Meditate</li>
+            </a>
+        </ul>
+    </div>
+    </div>
+
+    <div id="slogan">Discover Serenity, One Breath at a Time.</div>
+
+    <div class="box1">
+        <p>Within the tranquil embrace of silence lies the gateway to your inner sanctuary.</p>
+    </div>
+    <div class="box2">
+        <p>Meditation is a practice that involves training your mind to focus and redirect thoughts. 
+            It can be done through various<br>techniques like mindfulness, breathing exercises, or guided imagery. 
+            The benefits of meditation include reduced stress,<br> improved concentration, enhanced self-awareness, 
+            increased emotional well-being, and a greater sense of inner <br>peace and happiness. Regular meditation 
+            can also promote better sleep, lower blood pressure, and cultivate a deeper<br>connection with oneself and others.</p>
+    </div>
+
+    <form action="C:\Users\hardy\Desktop\SimoneHardy-Project-2\meditate.html">
+        <input type="submit" id="tryIt" value="Try for free" />
+    </form>
+
+    <div class="box3">
+        <h2>The mind can be a weird place</h2>
+        <p>It takes time to become comfortable with your thinking. There may be setbacks along the way, but it is a natural part<br>
+           of the meditation process. Keep practicing. You're doing fantastic just by turning up.<br><br>
+        </p>
+        <p id="ad">Try Rumination for free, and start reaping the benefits of meditation today.</p>
+    </div>
+
+    <div class="box4">
+        <h2>Meditation is a skill</h2>
+        <p>Mastering to meditate is similar to mastering any other skill. Consider training a muscle that you've never worked out<br>
+            before. It needs regular practice to get comfortable. And having an instructor typically makes things simpler. We have<br>
+            you covered there.
+
+        </p>
+    </div>
+
+    <div class="box6">
+        <h4>Inspirational Quotes</h4>
+        <div id="quote-box">
+            <p id="quote">Click the button to get an inspirational quote!</p>
+        </div>
+        <button onclick="generateQuote()">New Quote</button>
+    </div>
+
+    <script>
+        const quotes = [
+            "The best way to get started is to quit talking and begin doing. - Walt Disney",
+            "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty. - Winston Churchill",
+            "Don't let yesterday take up too much of today. - Will Rogers",
+            "You learn more from failure than from success. Don't let it stop you. Failure builds character. - Unknown",
+            "It's not whether you get knocked down, it's whether you get up. - Vince Lombardi",
+            "If you are working on something that you really care about, you don't have to be pushed. The vision pulls you. - Steve Jobs",
+            "People who are crazy enough to think they can change the world, are the ones who do. - Rob Siltanen",
+            "Failure will never overtake me if my determination to succeed is strong enough. - Og Mandino",
+            "Entrepreneurs are great at dealing with uncertainty and also very good at minimizing risk. That's the classic entrepreneur. - Mohnish Pabrai",
+            "We may encounter many defeats but we must not be defeated. - Maya Angelou"
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quote').innerText = quotes[randomIndex];
+        }
+
+        // Generate a quote when the page loads
+        window.onload = generateQuote;
+    </script>
+
+    <div class="box5">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>What is meditation?</h3>
+                <div class="answer">
+                    <p>Meditation is not about becoming a different, new, or better person. It is about increasing awareness and developing a
+                        healthy attitude. You are not attempting to turn off your thoughts or sensations. You're learning to watch them without
+                        passing judgment. You may gradually come to understand them better.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>What is mindfulness?</h3>
+                <div class="answer">
+                    <p>Mindfulness is the ability to be present, to rest in the here and now, completely involved in whatever we are doing at the time.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>What's the best time to meditate?</h3>
+                <div class="answer">
+                    <p>We recommend that you meditate first thing in the morning. It's a great way to start the day and typically the most convenient time to find a few uninterrupted minutes. The most essential thing is to choose a time that works for you and attempt to meditate regularly at that time.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>Where should I meditate?</h3>
+                <div class="answer">
+                    <p>No need to hike to the nearest mountaintop. Any reasonably quiet, comfortable place where you’re not likely to be interrupted is just fine.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>What should I wear to meditate?</h3>
+                <div class="answer">
+                    <p>You can wear whatever you like so long as you’re comfortable. It also helps to take off uncomfortable shoes and to loosen tight clothing, like ties or belts, if they’re bothering you.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>How should I sit during meditation?</h3>
+                <div class="answer">
+                    <p>Sit in the middle of a chair with your legs uncrossed, feet flat on the floor and hands resting on the legs or on your lap. The important thing is to set your body up in a way that your muscles are able to switch off and relax.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>Can I meditate lying down?</h3>
+                <div class="answer">
+                    <p>We generally recommend sitting instead of lying down. However, if it’s too painful or uncomfortable to sit upright, you’re OK lying down. Try placing a thin pillow under your head and bending your knees so your feet are flat on the floor. It’ll help protect your lower back.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>Is there a particular way I should breath?</h3>
+                <div class="answer">
+                    <p>Not at all. When we meditate, we’re not trying to breathe in a special way. Just allow the breath to be completely natural.</p>
+                </div>
+            </div>
+            <div class="question" onclick="toggleAnswer(this)">
+                <h3>How do I start meditating again after a break?</h3>
+                <div class="answer">
+                    <p>It really depends on how long you’ve been away. If it’s only been a few days, just pick up right where you left off. If it’s been at least a week, we recommend restarting the pack. If it’s been more than a month, you should probably do the Basics pack and get comfortable meditating again before you jump into anything else.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+
+</body>
+</html>
